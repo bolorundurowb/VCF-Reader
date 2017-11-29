@@ -1,0 +1,5 @@
+language: csharp
+solution: VCF-Reader.sln
+install:
+  - sudo apt-get install -y gtk-sharp2
+  - nuget restore VCF-Reader.sln
