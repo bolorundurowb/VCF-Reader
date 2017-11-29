@@ -1,9 +1,15 @@
-﻿namespace VCF_Reader
+﻿using Gtk;
+
+namespace vCardLibUI
 {
-    internal class Program
-    {
-        public static void Main(string[] args)
-        {
-        }
-    }
+	class MainClass
+	{
+		public static void Main (string[] args)
+		{
+			Application.Init ();
+			UI win = new UI ();
+			win.Show ();
+			Application.Run ();
+		}
+	}
 }
